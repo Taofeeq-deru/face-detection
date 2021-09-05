@@ -1,8 +1,32 @@
-# Getting Started with Create React App
+# Using Face Detection and Capture
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+It uses face-api.js for face detection and react webcam to capture detected face.
+
+## Props
+
+The components takes the following props
+
+### isProcessing - boolean
+
+Loading state for the face capture section, can be used for when api call is made for more validation of face captured.
+
+### closeSection - function
+
+Function to close the face capture section
+
+### next - function
+
+Function to call after face capture is successful, this takes an image parameter which is a base64 code of the face captured.
+
+### errMessage - string
+
+Error message to return e.g. in case of a failed validation after capture
+
+<!-- # Getting Started with Create React App -->
+
+<!-- ## Available Scripts
 
 In the project directory, you can run:
 
@@ -67,4 +91,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
